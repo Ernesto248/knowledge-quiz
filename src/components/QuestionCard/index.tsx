@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Score from "../Score";
+import Timer from "../Timer";
 
 interface Props {
   back: () => void;
@@ -9,6 +10,7 @@ interface Props {
   score: number;
   handleScore: () => void;
   onNextQuestion: () => void;
+  isQuizFinish: boolean;
 }
 
 const QuestionCard = ({
@@ -19,9 +21,19 @@ const QuestionCard = ({
   onNextQuestion,
   score,
   handleScore,
+  isQuizFinish,
 }: Props) => {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isSelected, setIsSelected] = useState<boolean>(false);
+  const [isTimerStarted, setIsTimerStarted] = useState<boolean>(true);
+  const [initialTime, setInitialTime] = useState<number>(10);
+  const [timerKey, setTimerKey] = useState<number>(0);
+
+  useEffect(() => {
+    if (isQuizFinish) {
+      setIsTimerStarted(false);
+    }
+  }, [isQuizFinish]);
 
   const handleOnClick = (e: React.MouseEvent<HTMLLIElement>) => {
     if (isSelected) return;
@@ -29,6 +41,7 @@ const QuestionCard = ({
     if (answer) {
       setSelectedAnswer(answer);
       setIsSelected(true);
+      setIsTimerStarted(false);
       if (answer === correctAnswer) handleScore();
     }
   };
@@ -36,6 +49,13 @@ const QuestionCard = ({
   const handleNextQuestion = () => {
     setSelectedAnswer(null);
     setIsSelected(false);
+    setInitialTime(10);
+    if (isQuizFinish) {
+      setIsTimerStarted(false);
+    } else {
+      setIsTimerStarted(true);
+    }
+    setTimerKey((prev) => prev + 1);
     onNextQuestion();
   };
 
@@ -81,7 +101,11 @@ const QuestionCard = ({
         ))}
       </ul>
 
-      <h3 className="mt-6 text-lg font-semibold sm:text-xl">⏳ Timer</h3>
+      <Timer
+        key={timerKey}
+        initialTime={initialTime}
+        isTimerStarted={isTimerStarted}
+      />
 
       <button
         className="px-5 py-2 mt-4 text-lg font-bold text-white transition-all duration-300 bg-blue-700 rounded-lg shadow-md hover:bg-blue-600 active:scale-95 sm:py-3 sm:px-6"

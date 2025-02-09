@@ -16,8 +16,9 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [isResultModalOpen, setIsResultModalOpen] = useState<boolean>(false);
+  const [isQuizFinish, setIsQuizFinish] = useState<boolean>(false);
 
-  const handleScore = () => setScore(score + 1);
+  const handleScore = () => setScore((prev) => prev + 1);
 
   const closeResultModal = () => {
     setIsResultModalOpen(false);
@@ -34,6 +35,7 @@ function App() {
   });
 
   const quitQuiz = () => {
+    setIsQuizFinish(false);
     setIsQuizStarted(false);
     setCurrentQuestion(0);
     setDifficulty(DifficultyType.Easy);
@@ -51,11 +53,11 @@ function App() {
   };
 
   const handleNextQuestion = () => {
-    console.log(currentQuestion);
     if (currentQuestion < questionAmount - 1) {
-      setCurrentQuestion(currentQuestion + 1);
+      setCurrentQuestion((prev) => prev + 1);
       return;
     }
+    setIsQuizFinish(true);
     setIsResultModalOpen(true);
     setCurrentQuestion(0);
   };
@@ -69,6 +71,7 @@ function App() {
       {isQuizStarted && quiz ? (
         <div className="w-full max-w-sm p-4 bg-gray-800 shadow-xl md:max-w-2xl md:p-6 rounded-2xl">
           <QuestionCard
+            isQuizFinish={isQuizFinish}
             score={score}
             handleScore={handleScore}
             back={quitQuiz}
