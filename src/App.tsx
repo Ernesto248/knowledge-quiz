@@ -40,28 +40,34 @@ function App() {
       setCurrentQuestion(currentQuestion + 1);
       return;
     }
-    alert("quiz finished");
+    alert("Quiz finished!");
     setCurrentQuestion(0);
     quitQuiz();
   };
 
   return (
-    <main className="w-full h-screen">
-      <h1>Knowledge Quiz</h1>
+    <main className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-800 to-gray-900 text-white font-virgil transition-all duration-500 ease-in-out">
+      <h1 className="text-5xl font-bold mb-6 shadow-lg text-center">
+        🎓 Knowledge Quiz
+      </h1>
       {isQuizStarted && quiz ? (
-        <QuestionCard
-          back={quitQuiz}
-          question={quiz[currentQuestion].question}
-          correctAnswer={quiz[currentQuestion].answer}
-          onNextQuestion={handleNextQuestion}
-          options={quiz[currentQuestion].options}
-        />
+        <div className="w-full max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-xl">
+          <QuestionCard
+            back={quitQuiz}
+            question={quiz[currentQuestion].question}
+            correctAnswer={quiz[currentQuestion].answer}
+            onNextQuestion={handleNextQuestion}
+            options={quiz[currentQuestion].options}
+          />
+        </div>
       ) : (
-        <MainMenu
-          startQuiz={startQuiz}
-          onClickDifficulty={handleClickDifficulty}
-          onClickQuestionAmount={handleClickQuestionAmount}
-        />
+        <div className="w-full max-w-md bg-gray-800 p-6 rounded-xl shadow-md">
+          <MainMenu
+            startQuiz={startQuiz}
+            onClickDifficulty={handleClickDifficulty}
+            onClickQuestionAmount={handleClickQuestionAmount}
+          />
+        </div>
       )}
     </main>
   );
