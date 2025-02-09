@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Virgil";
+  src: url("/assets/fonts/Virgil.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Aplica la fuente a todo el cuerpo de la aplicación */
+body {
+  font-family: "Virgil", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  font-family: "Virgil", sans-serif;
+}
