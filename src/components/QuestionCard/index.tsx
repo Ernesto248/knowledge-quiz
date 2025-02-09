@@ -39,7 +39,7 @@ const QuestionCard = ({
         className="self-start bg-gray-700 hover:bg-gray-600 active:scale-95 text-white py-2 px-4 rounded-lg transition-all duration-300 shadow-md"
         onClick={back}
       >
-        ⬅️ Back
+        ⬅️ Main Menu
       </button>
 
       <h2 className="text-2xl sm:text-3xl font-bold text-center mt-4">
@@ -51,13 +51,20 @@ const QuestionCard = ({
           <li
             key={index}
             onClick={handleOnClick}
-            className={`w-5/6 sm:w-3/4 text-center py-2 sm:py-3 px-4 rounded-lg border-2 border-gray-600 cursor-pointer transition-all duration-300 shadow-md text-base sm:text-lg font-semibold
+            className={`text-white w-5/6 sm:w-3/4 text-center py-2 sm:py-3 px-4 rounded-lg border-2 border-gray-600 cursor-pointer transition-all duration-300 shadow-md text-base sm:text-lg font-semibold
               ${
                 selectedAnswer === option
                   ? option === correctAnswer
-                    ? "bg-green-500 text-white"
-                    : "bg-red-500 text-white"
+                    ? "bg-blue-500 hover:bg-blue-400"
+                    : "bg-red-500 hover:bg-red-400"
                   : "hover:bg-gray-700"
+              }
+              ${
+                isSelected &&
+                correctAnswer === option &&
+                selectedAnswer !== correctAnswer
+                  ? "bg-blue-500 hover:bg-blue-400"
+                  : ""
               }`}
           >
             {option}

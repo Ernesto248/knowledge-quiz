@@ -18,14 +18,18 @@ function App() {
     setIsQuizStarted(true);
   };
 
+  const { quiz, generateRandomIndexes } = useQuiz({
+    difficulty,
+    questionAmount,
+  });
+
   const quitQuiz = () => {
     setIsQuizStarted(false);
     setCurrentQuestion(0);
     setDifficulty(DifficultyType.Easy);
     setQuestionAmount(QuestionAmountType.Five);
+    generateRandomIndexes();
   };
-
-  const { quiz } = useQuiz({ difficulty, questionAmount });
 
   const handleClickDifficulty = (difficulty: DifficultyType) => {
     setDifficulty(difficulty);
