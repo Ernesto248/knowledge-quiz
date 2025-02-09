@@ -26,6 +26,7 @@ const QuestionCard = ({
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isSelected, setIsSelected] = useState<boolean>(false);
   const [isTimerStarted, setIsTimerStarted] = useState<boolean>(true);
+  const [isTimerZero, setIsTimerZero] = useState<boolean>(false);
   const [initialTime, setInitialTime] = useState<number>(10);
   const [timerKey, setTimerKey] = useState<number>(0);
 
@@ -35,8 +36,10 @@ const QuestionCard = ({
     }
   }, [isQuizFinish]);
 
+  const handleTimeEnd = () => setIsTimerZero(true);
+
   const handleOnClick = (e: React.MouseEvent<HTMLLIElement>) => {
-    if (isSelected) return;
+    if (isSelected || isTimerZero) return;
     const answer = e.currentTarget.textContent;
     if (answer) {
       setSelectedAnswer(answer);
@@ -50,6 +53,7 @@ const QuestionCard = ({
     setSelectedAnswer(null);
     setIsSelected(false);
     setInitialTime(10);
+    setIsTimerZero(false);
     if (isQuizFinish) {
       setIsTimerStarted(false);
     } else {
@@ -82,7 +86,9 @@ const QuestionCard = ({
             onClick={handleOnClick}
             className={`text-white w-5/6 sm:w-3/4 text-center py-2 sm:py-3 px-4 rounded-lg border-2 border-gray-600 cursor-pointer transition-all duration-300 shadow-md text-base sm:text-lg font-semibold
               ${
-                selectedAnswer === option
+                isTimerZero
+                  ? "bg-gray-500 cursor-not-allowed"
+                  : selectedAnswer === option
                   ? option === correctAnswer
                     ? "bg-blue-500 hover:bg-blue-400"
                     : "bg-red-500 hover:bg-red-400"
@@ -103,6 +109,7 @@ const QuestionCard = ({
 
       <Timer
         key={timerKey}
+        onTimeEnd={handleTimeEnd}
         initialTime={initialTime}
         isTimerStarted={isTimerStarted}
       />

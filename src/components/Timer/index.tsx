@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 interface Props {
   initialTime: number;
   isTimerStarted: boolean;
+  onTimeEnd: () => void;
 }
 
-const Timer = ({ initialTime, isTimerStarted }: Props) => {
+const Timer = ({ initialTime, isTimerStarted, onTimeEnd }: Props) => {
   const [time, setTime] = useState<number>(initialTime);
 
   useEffect(() => {
@@ -19,6 +20,7 @@ const Timer = ({ initialTime, isTimerStarted }: Props) => {
       setTime((prev) => {
         if (prev <= 1) {
           clearInterval(interval);
+          onTimeEnd();
           return 0;
         }
         return prev - 1;
