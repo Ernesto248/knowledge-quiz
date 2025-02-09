@@ -13,6 +13,9 @@ function App() {
   );
   const [isQuizStarted, setIsQuizStarted] = useState<boolean>(false);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
+  const [score, setScore] = useState<number>(0);
+
+  const handleScore = () => setScore(score + 1);
 
   const startQuiz = () => {
     setIsQuizStarted(true);
@@ -29,6 +32,7 @@ function App() {
     setDifficulty(DifficultyType.Easy);
     setQuestionAmount(QuestionAmountType.Five);
     generateRandomIndexes();
+    setScore(0);
   };
 
   const handleClickDifficulty = (difficulty: DifficultyType) => {
@@ -51,14 +55,16 @@ function App() {
   };
 
   return (
-    <main className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-800 to-gray-900 text-white font-virgil transition-all duration-500 ease-in-out p-4">
-      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center shadow-lg">
+    <main className="flex flex-col items-center justify-center w-full min-h-screen p-4 text-white transition-all duration-500 ease-in-out bg-gradient-to-b from-gray-800 to-gray-900 font-virgil">
+      <h1 className="mb-6 text-3xl font-bold text-center shadow-lg md:text-5xl">
         🎓 Knowledge Quiz
       </h1>
 
       {isQuizStarted && quiz ? (
-        <div className="w-full max-w-sm md:max-w-2xl bg-gray-800 p-4 md:p-6 rounded-2xl shadow-xl">
+        <div className="w-full max-w-sm p-4 bg-gray-800 shadow-xl md:max-w-2xl md:p-6 rounded-2xl">
           <QuestionCard
+            score={score}
+            handleScore={handleScore}
             back={quitQuiz}
             question={quiz[currentQuestion].question}
             correctAnswer={quiz[currentQuestion].answer}
@@ -67,7 +73,7 @@ function App() {
           />
         </div>
       ) : (
-        <div className="w-full max-w-sm md:max-w-lg bg-gray-800 p-4 md:p-6 rounded-xl shadow-md">
+        <div className="w-full max-w-sm p-4 bg-gray-800 shadow-md md:max-w-lg md:p-6 rounded-xl">
           <MainMenu
             startQuiz={startQuiz}
             onClickDifficulty={handleClickDifficulty}

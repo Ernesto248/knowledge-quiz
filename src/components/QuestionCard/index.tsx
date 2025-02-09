@@ -1,10 +1,13 @@
 import { useState } from "react";
+import Score from "../Score";
 
 interface Props {
   back: () => void;
   question: string;
   options: Array<string>;
   correctAnswer: string;
+  score: number;
+  handleScore: () => void;
   onNextQuestion: () => void;
 }
 
@@ -14,6 +17,8 @@ const QuestionCard = ({
   options,
   correctAnswer,
   onNextQuestion,
+  score,
+  handleScore,
 }: Props) => {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isSelected, setIsSelected] = useState<boolean>(false);
@@ -24,6 +29,7 @@ const QuestionCard = ({
     if (answer) {
       setSelectedAnswer(answer);
       setIsSelected(true);
+      if (answer === correctAnswer) handleScore();
     }
   };
 
@@ -34,19 +40,22 @@ const QuestionCard = ({
   };
 
   return (
-    <section className="bg-gray-800 text-white w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto p-4 sm:p-6 rounded-lg shadow-2xl font-virgil transition-all duration-500 ease-in-out flex flex-col items-center">
-      <button
-        className="self-start bg-gray-700 hover:bg-gray-600 active:scale-95 text-white py-2 px-4 rounded-lg transition-all duration-300 shadow-md"
-        onClick={back}
-      >
-        ⬅️ Main Menu
-      </button>
+    <section className="flex flex-col items-center w-full max-w-xs p-4 mx-auto text-white transition-all duration-500 ease-in-out bg-gray-800 rounded-lg shadow-2xl sm:max-w-md md:max-w-2xl sm:p-6 font-virgil">
+      <div className="flex flex-row items-center justify-between w-full">
+        <button
+          className="self-start px-4 py-2 text-white transition-all duration-300 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 active:scale-95"
+          onClick={back}
+        >
+          ⬅️ Main Menu
+        </button>
+        <Score score={score} />
+      </div>
 
-      <h2 className="text-2xl sm:text-3xl font-bold text-center mt-4">
+      <h2 className="mt-4 text-2xl font-bold text-center sm:text-3xl">
         {question}
       </h2>
 
-      <ul className="w-full flex flex-col items-center gap-2 sm:gap-3 mt-6">
+      <ul className="flex flex-col items-center w-full gap-2 mt-6 sm:gap-3">
         {options.map((option, index) => (
           <li
             key={index}
@@ -72,10 +81,10 @@ const QuestionCard = ({
         ))}
       </ul>
 
-      <h3 className="text-lg sm:text-xl mt-6 font-semibold">⏳ Timer</h3>
+      <h3 className="mt-6 text-lg font-semibold sm:text-xl">⏳ Timer</h3>
 
       <button
-        className="mt-4 bg-blue-700 hover:bg-blue-600 active:scale-95 text-white py-2 px-5 sm:py-3 sm:px-6 rounded-lg text-lg font-bold transition-all duration-300 shadow-md"
+        className="px-5 py-2 mt-4 text-lg font-bold text-white transition-all duration-300 bg-blue-700 rounded-lg shadow-md hover:bg-blue-600 active:scale-95 sm:py-3 sm:px-6"
         onClick={handleNextQuestion}
       >
         Next Question ➡️
