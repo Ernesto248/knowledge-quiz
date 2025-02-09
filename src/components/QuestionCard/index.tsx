@@ -27,7 +27,7 @@ const QuestionCard = ({
   const [isSelected, setIsSelected] = useState<boolean>(false);
   const [isTimerStarted, setIsTimerStarted] = useState<boolean>(true);
   const [isTimerZero, setIsTimerZero] = useState<boolean>(false);
-  const [initialTime, setInitialTime] = useState<number>(10);
+  const [initialTime, setInitialTime] = useState<number>(30);
   const [timerKey, setTimerKey] = useState<number>(0);
 
   useEffect(() => {
@@ -52,7 +52,7 @@ const QuestionCard = ({
   const handleNextQuestion = () => {
     setSelectedAnswer(null);
     setIsSelected(false);
-    setInitialTime(10);
+    setInitialTime(30);
     setIsTimerZero(false);
     if (isQuizFinish) {
       setIsTimerStarted(false);
