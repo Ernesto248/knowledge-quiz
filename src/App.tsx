@@ -20,8 +20,9 @@ function App() {
 
   const quitQuiz = () => {
     setIsQuizStarted(false);
-    setDifficulty(DifficultyType.Medium);
-    setQuestionAmount(QuestionAmountType.Ten);
+    setCurrentQuestion(0);
+    setDifficulty(DifficultyType.Easy);
+    setQuestionAmount(QuestionAmountType.Five);
   };
 
   const { quiz } = useQuiz({ difficulty, questionAmount });
@@ -46,12 +47,13 @@ function App() {
   };
 
   return (
-    <main className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-800 to-gray-900 text-white font-virgil transition-all duration-500 ease-in-out">
-      <h1 className="text-5xl font-bold mb-6 shadow-lg text-center">
+    <main className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-800 to-gray-900 text-white font-virgil transition-all duration-500 ease-in-out p-4">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center shadow-lg">
         🎓 Knowledge Quiz
       </h1>
+
       {isQuizStarted && quiz ? (
-        <div className="w-full max-w-2xl bg-gray-800 p-6 rounded-2xl shadow-xl">
+        <div className="w-full max-w-sm md:max-w-2xl bg-gray-800 p-4 md:p-6 rounded-2xl shadow-xl">
           <QuestionCard
             back={quitQuiz}
             question={quiz[currentQuestion].question}
@@ -61,7 +63,7 @@ function App() {
           />
         </div>
       ) : (
-        <div className="w-full max-w-md bg-gray-800 p-6 rounded-xl shadow-md">
+        <div className="w-full max-w-sm md:max-w-lg bg-gray-800 p-4 md:p-6 rounded-xl shadow-md">
           <MainMenu
             startQuiz={startQuiz}
             onClickDifficulty={handleClickDifficulty}
