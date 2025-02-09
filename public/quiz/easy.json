@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of Spain?",
+      "options": ["Barcelona", "Madrid", "Seville", "Valencia"],
+      "answer": "Madrid"
+    },
+    {
+      "id": 2,
+      "question": "On which continent is Egypt located?",
+      "options": ["Asia", "Africa", "Europe", "America"],
+      "answer": "Africa"
+    },
+    {
+      "id": 3,
+      "question": "How many days are there in a week?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "id": 4,
+      "question": "What is the largest ocean in the world?",
+      "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "answer": "Pacific"
+    },
+    {
+      "id": 5,
+      "question": "Who painted 'The Mona Lisa'?",
+      "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Van Gogh"],
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "id": 6,
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Ag", "Au", "Fe", "Cu"],
+      "answer": "Au"
+    },
+    {
+      "id": 7,
+      "question": "How many planets are there in our solar system?",
+      "options": ["6", "7", "8", "9"],
+      "answer": "8"
+    },
+    {
+      "id": 8,
+      "question": "In which country is the Eiffel Tower located?",
+      "options": ["Italy", "Spain", "France", "Germany"],
+      "answer": "France"
+    },
+    {
+      "id": 9,
+      "question": "What is the longest river in the world?",
+      "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+      "answer": "Amazon"
+    },
+    {
+      "id": 10,
+      "question": "Who wrote 'Don Quixote de la Mancha'?",
+      "options": ["Gabriel García Márquez", "Miguel de Cervantes", "Federico García Lorca", "Jorge Luis Borges"],
+      "answer": "Miguel de Cervantes"
+    },
+    {
+      "id": 11,
+      "question": "What gas do we breathe?",
+      "options": ["Nitrogen", "Carbon dioxide", "Oxygen", "Helium"],
+      "answer": "Oxygen"
+    },
+    {
+      "id": 12,
+      "question": "What is the largest land animal?",
+      "options": ["Giraffe", "African elephant", "Rhinoceros", "Hippopotamus"],
+      "answer": "African elephant"
+    },
+    {
+      "id": 13,
+      "question": "What is the most abundant metal in the Earth's crust?",
+      "options": ["Iron", "Aluminum", "Copper", "Gold"],
+      "answer": "Aluminum"
+    },
+    {
+      "id": 14,
+      "question": "How many colors does a rainbow have?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "id": 15,
+      "question": "Who invented the light bulb?",
+      "options": ["Thomas Edison", "Alexander Graham Bell", "Isaac Newton", "Marie Curie"],
+      "answer": "Thomas Edison"
+    },
+    {
+      "id": 16,
+      "question": "In which country is Machu Picchu located?",
+      "options": ["Mexico", "Peru", "Colombia", "Bolivia"],
+      "answer": "Peru"
+    },
+    {
+      "id": 17,
+      "question": "What is the longest bone in the human body?",
+      "options": ["Femur", "Tibia", "Humerus", "Radius"],
+      "answer": "Femur"
+    },
+    {
+      "id": 18,
+      "question": "What is the red planet?",
+      "options": ["Jupiter", "Mars", "Venus", "Saturn"],
+      "answer": "Mars"
+    },
+    {
+      "id": 19,
+      "question": "In what year did World War II begin?",
+      "options": ["1935", "1939", "1941", "1945"],
+      "answer": "1939"
+    },
+    {
+      "id": 20,
+      "question": "Who discovered penicillin?",
+      "options": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Robert Koch"],
+      "answer": "Alexander Fleming"
+    },
+    {
+      "id": 21,
+      "question": "What is the capital of Italy?",
+      "options": ["Florence", "Venice", "Rome", "Milan"],
+      "answer": "Rome"
+    },
+    {
+      "id": 22,
+      "question": "How many sides does a triangle have?",
+      "options": ["2", "3", "4", "5"],
+      "answer": "3"
+    },
+    {
+      "id": 23,
+      "question": "What currency is used in Japan?",
+      "options": ["Yuan", "Won", "Yen", "Ringgit"],
+      "answer": "Yen"
+    },
+    {
+      "id": 24,
+      "question": "Who was the first man to walk on the Moon?",
+      "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Alan Shepard"],
+      "answer": "Neil Armstrong"
+    },
+    {
+      "id": 25,
+      "question": "What famous painting did Vincent van Gogh paint with sunflowers?",
+      "options": ["The Starry Night", "Sunflowers", "The Scream", "Guernica"],
+      "answer": "Sunflowers"
+    },
+    {
+      "id": 26,
+      "question": "What river runs through London?",
+      "options": ["Seine", "Thames", "Rhine", "Danube"],
+      "answer": "Thames"
+    },
+    {
+      "id": 27,
+      "question": "In which country is the Taj Mahal located?",
+      "options": ["Pakistan", "India", "Bangladesh", "Nepal"],
+      "answer": "India"
+    },
+    {
+      "id": 28,
+      "question": "What is the demonym for people born in Brazil?",
+      "options": ["Brazilian", "Brasilia", "Brasileiro", "Brasilense"],
+      "answer": "Brazilian"
+    },
+    {
+      "id": 29,
+      "question": "Which animal represents the symbol of the panda?",
+      "options": ["Polar bear", "Red panda", "Giant panda", "Koala"],
+      "answer": "Giant panda"
+    },
+    {
+      "id": 30,
+      "question": "What is the main ingredient in guacamole?",
+      "options": ["Tomato", "Onion", "Avocado", "Lime"],
+      "answer": "Avocado"
+    },
+    {
+      "id": 31,
+      "question": "Who was the first president of the United States?",
+      "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+      "answer": "George Washington"
+    },
+    {
+      "id": 32,
+      "question": "In which sport did Michael Jordan excel?",
+      "options": ["Soccer", "Tennis", "Basketball", "Baseball"],
+      "answer": "Basketball"
+    },
+    {
+      "id": 33,
+      "question": "What is the official language of Australia?",
+      "options": ["English", "Australian", "Aboriginal", "Maori"],
+      "answer": "English"
+    },
+    {
+      "id": 34,
+      "question": "How many states does the United States have?",
+      "options": ["48", "50", "52", "55"],
+      "answer": "50"
+    },
+    {
+      "id": 35,
+      "question": "What instrument does Lisa Simpson play in The Simpsons?",
+      "options": ["Saxophone", "Trumpet", "Clarinet", "Flute"],
+      "answer": "Saxophone"
+    },
+    {
+      "id": 36,
+      "question": "What is the name of Mickey Mouse's dog?",
+      "options": ["Pluto", "Goofy", "Minnie", "Donald"],
+      "answer": "Pluto"
+    },
+    {
+      "id": 37,
+      "question": "Which country is famous for the tango?",
+      "options": ["Spain", "Italy", "Argentina", "France"],
+      "answer": "Argentina"
+    },
+    {
+      "id": 38,
+      "question": "What is the national dish of Japan?",
+      "options": ["Sushi", "Ramen", "Pizza", "Paella"],
+      "answer": "Sushi"
+    },
+    {
+      "id": 39,
+      "question": "What mountain range separates Europe from Asia?",
+      "options": ["Alps", "Andes", "Himalayas", "Urals"],
+      "answer": "Urals"
+    },
+    {
+      "id": 40,
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Leo Tolstoy"],
+      "answer": "William Shakespeare"
+    },
+    {
+      "id": 41,
+      "question": "What is the name of the Greek goddess of love?",
+      "options": ["Athena", "Aphrodite", "Artemis", "Hera"],
+      "answer": "Aphrodite"
+    },
+    {
+      "id": 42,
+      "question": "What car brand manufactures the 'Mustang' model?",
+      "options": ["Ford", "Chevrolet", "Toyota", "BMW"],
+      "answer": "Ford"
+    },
+    {
+      "id": 43,
+      "question": "What type of animal is an orca?",
+      "options": ["Shark", "Whale", "Seal", "Dolphin"],
+      "answer": "Whale"
+    },
+    {
+      "id": 44,
+      "question": "What wind instrument is the flute?",
+      "options": ["String", "Percussion", "Wind", "Metal"],
+      "answer": "Wind"
+    },
+    {
+      "id": 45,
+      "question": "What is the demonym for people from Germany?",
+      "options": ["German", "Germano", "Alemano", "Germanés"],
+      "answer": "German"
+    },
+    {
+      "id": 46,
+      "question": "What color represents the Republican political party in the USA?",
+      "options": ["Blue", "Green", "Red", "Yellow"],
+      "answer": "Red"
+    },
+    {
+      "id": 47,
+      "question": "What is the capital of Canada?",
+      "options": ["Toronto", "Montreal", "Ottawa", "Vancouver"],
+      "answer": "Ottawa"
+    },
+    {
+      "id": 48,
+      "question": "What sport is played at Wimbledon?",
+      "options": ["Golf", "Tennis", "Soccer", "Basketball"],
+      "answer": "Tennis"
+    },
+    {
+      "id": 49,
+      "question": "What is the name of the famous detective created by Arthur Conan Doyle?",
+      "options": ["Hercule Poirot", "Sherlock Holmes", "Miss Marple", "Philip Marlowe"],
+      "answer": "Sherlock Holmes"
+    },
+    {
+      "id": 50,
+      "question": "What is bigger, a kilometer or a mile?",
+      "options": ["Kilometer", "Mile", "They are the same", "It depends"],
+      "answer": "Mile"
+    }
+  ]
+}

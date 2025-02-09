@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which philosophical concept is best described by the allegory of the cave?",
+      "options": ["Existentialism", "Absurdism", "Platonism", "Nihilism"],
+      "answer": "Platonism"
+    },
+    {
+      "id": 2,
+      "question": "What is the name of the quantum mechanical phenomenon where particles become linked and instantaneously affect each other regardless of distance?",
+      "options": ["Quantum superposition", "Quantum entanglement", "Quantum tunneling", "Quantum decoherence"],
+      "answer": "Quantum entanglement"
+    },
+    {
+      "id": 3,
+      "question": "The 'Anthropic Principle' in cosmology most directly addresses which fundamental question?",
+      "options": ["The origin of the universe", "The fate of the universe", "Why the universe's constants are fine-tuned for life", "The existence of dark matter"],
+      "answer": "Why the universe's constants are fine-tuned for life"
+    },
+    {
+      "id": 4,
+      "question": "Which treaty established the modern nation-state system in Europe?",
+      "options": ["Treaty of Westphalia", "Treaty of Versailles", "Treaty of Tordesillas", "Treaty of Ghent"],
+      "answer": "Treaty of Westphalia"
+    },
+    {
+      "id": 5,
+      "question": "In set theory, what is Cantor's diagonal argument used to prove?",
+      "options": ["The existence of irrational numbers", "The uncountability of the real numbers", "The continuum hypothesis", "Gödel's incompleteness theorems"],
+      "answer": "The uncountability of the real numbers"
+    },
+    {
+      "id": 6,
+      "question": "Which economic concept, developed by Joseph Schumpeter, describes the process of innovation leading to the demise of old industries and the rise of new ones?",
+      "options": ["Creative destruction", "Comparative advantage", "Market equilibrium", "Tragedy of the commons"],
+      "answer": "Creative destruction"
+    },
+    {
+      "id": 7,
+      "question": "What is the name of the chemical reaction that involves the saponification of fats and oils?",
+      "options": ["Esterification", "Hydrolysis", "Hydrogenation", "Saponification"],
+      "answer": "Saponification"
+    },
+    {
+      "id": 8,
+      "question": "The 'Nash Equilibrium' is a central concept in which branch of mathematics?",
+      "options": ["Calculus", "Topology", "Game Theory", "Number Theory"],
+      "answer": "Game Theory"
+    },
+    {
+      "id": 9,
+      "question": "Which literary movement is characterized by a focus on stream of consciousness and psychological realism?",
+      "options": ["Romanticism", "Modernism", "Realism", "Surrealism"],
+      "answer": "Modernism"
+    },
+    {
+      "id": 10,
+      "question": "What is the 'Kármán line' defined as?",
+      "options": ["The boundary of Earth's atmosphere", "The edge of the solar system", "The limit of human exploration underwater", "The highest point on Earth"],
+      "answer": "The boundary of Earth's atmosphere"
+    },
+    {
+      "id": 11,
+      "question": "In music theory, what does 'atonality' refer to?",
+      "options": ["Music without a tonal center", "Music with only percussion instruments", "Music played in very loud volumes", "Music from ancient Greece"],
+      "answer": "Music without a tonal center"
+    },
+    {
+      "id": 12,
+      "question": "What is the 'Fermi Paradox'?",
+      "options": ["The apparent contradiction between the high probability of extraterrestrial civilizations and the lack of evidence for them", "The paradox of faster-than-light travel", "The challenge of colonizing Mars", "The debate over the existence of dark energy"],
+      "answer": "The apparent contradiction between the high probability of extraterrestrial civilizations and the lack of evidence for them"
+    },
+    {
+      "id": 13,
+      "question": "Which economic school of thought advocates for minimal government intervention and free markets?",
+      "options": ["Keynesian economics", "Marxist economics", "Austrian economics", "Behavioral economics"],
+      "answer": "Austrian economics"
+    },
+    {
+      "id": 14,
+      "question": "What is the 'Heisenberg Uncertainty Principle' in quantum mechanics?",
+      "options": ["The principle that energy and mass are equivalent", "The principle that the universe is expanding", "The principle that it's impossible to know both the position and momentum of a particle with perfect accuracy", "The principle of conservation of energy"],
+      "answer": "The principle that it's impossible to know both the position and momentum of a particle with perfect accuracy"
+    },
+    {
+      "id": 15,
+      "question": "In linguistics, what is the 'Sapir-Whorf hypothesis'?",
+      "options": ["The theory that language is innate", "The theory that language influences thought and perception", "The theory of universal grammar", "The theory of language evolution"],
+      "answer": "The theory that language influences thought and perception"
+    },
+    {
+      "id": 16,
+      "question": "Which philosophical concept, associated with Friedrich Nietzsche, means 'love of fate'?",
+      "options": ["Übermensch", "Amor fati", "Will to power", "Eternal recurrence"],
+      "answer": "Amor fati"
+    },
+    {
+      "id": 17,
+      "question": "What is the 'Hawthorne effect' in social sciences?",
+      "options": ["The tendency for people to behave differently when they know they are being studied", "The effect of weather on human behavior", "The impact of technology on social interaction", "The correlation between education level and income"],
+      "answer": "The tendency for people to behave differently when they know they are being studied"
+    },
+    {
+      "id": 18,
+      "question": "What is 'Gödel's incompleteness theorem' in mathematical logic?",
+      "options": ["Every consistent formal system is incomplete", "Mathematics is fundamentally inconsistent", "All mathematical truths can be proven", "There are no unprovable mathematical statements"],
+      "answer": "Every consistent formal system is incomplete"
+    },
+    {
+      "id": 19,
+      "question": "Which geological epoch is often referred to as the 'Age of Mammals'?",
+      "options": ["Jurassic", "Cretaceous", "Paleocene", "Pleistocene"],
+      "answer": "Paleocene"
+    },
+    {
+      "id": 20,
+      "question": "What is 'Occam's Razor'?",
+      "options": ["A surgical instrument", "A philosophical principle of parsimony", "A type of bird", "A mathematical theorem"],
+      "answer": "A philosophical principle of parsimony"
+    },
+    {
+      "id": 21,
+      "question": "In art, what is 'chiaroscuro'?",
+      "options": ["A technique using strong contrasts between light and dark", "A type of sculpture", "A method of fresco painting", "A school of abstract art"],
+      "answer": "A technique using strong contrasts between light and dark"
+    },
+    {
+      "id": 22,
+      "question": "What is the 'Tragedy of the Commons'?",
+      "options": ["A Shakespearean play", "An economic problem where shared resources are depleted due to individual self-interest", "A historical event in ancient Rome", "A mathematical paradox"],
+      "answer": "An economic problem where shared resources are depleted due to individual self-interest"
+    },
+    {
+      "id": 23,
+      "question": "Which cognitive bias describes the tendency to overestimate one's own knowledge or abilities?",
+      "options": ["Confirmation bias", "Dunning-Kruger effect", "Availability heuristic", "Anchoring bias"],
+      "answer": "Dunning-Kruger effect"
+    },
+    {
+      "id": 24,
+      "question": "What is 'Pareto efficiency' or 'Pareto optimality'?",
+      "options": ["A state of allocation of resources where it is impossible to make any one individual better off without making at least one individual worse off", "Maximum economic output", "Equal distribution of wealth", "Complete market regulation"],
+      "answer": "A state of allocation of resources where it is impossible to make any one individual better off without making at least one individual worse off"
+    },
+    {
+      "id": 25,
+      "question": "In psychology, what is 'cognitive dissonance'?",
+      "options": ["A mental disorder", "The discomfort felt when holding conflicting beliefs, values, or attitudes", "A type of memory loss", "A learning disability"],
+      "answer": "The discomfort felt when holding conflicting beliefs, values, or attitudes"
+    },
+    {
+      "id": 26,
+      "question": "What is the 'Butterfly Effect' in chaos theory?",
+      "options": ["The idea that small initial differences may lead to large unforeseen consequences over time", "The life cycle of a butterfly", "A type of weather pattern", "The impact of butterflies on ecosystems"],
+      "answer": "The idea that small initial differences may lead to large unforeseen consequences over time"
+    },
+    {
+      "id": 27,
+      "question": "Which philosophical school of thought emphasizes reason and logic as the primary paths to knowledge?",
+      "options": ["Empiricism", "Rationalism", "Existentialism", "Pragmatism"],
+      "answer": "Rationalism"
+    },
+    {
+      "id": 28,
+      "question": "What does 'qualia' refer to in philosophy of mind?",
+      "options": ["The measurable properties of matter", "The subjective, qualitative feel of experience", "Objective reality independent of perception", "The concept of artificial intelligence"],
+      "answer": "The subjective, qualitative feel of experience"
+    },
+    {
+      "id": 29,
+      "question": "What is 'blackbody radiation'?",
+      "options": ["Radiation emitted by black holes", "The spectrum of light from the sun", "The thermal electromagnetic radiation emitted by a blackbody or perfect absorber", "Radio waves in space"],
+      "answer": "The thermal electromagnetic radiation emitted by a blackbody or perfect absorber"
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is NOT a fundamental force of nature?",
+      "options": ["Gravity", "Electromagnetism", "Strong nuclear force", "Friction"],
+      "answer": "Friction"
+    },
+    {
+      "id": 31,
+      "question": "What is 'Maslow's Hierarchy of Needs' primarily used to explain?",
+      "options": ["Economic systems", "Human motivation", "Chemical reactions", "Evolutionary biology"],
+      "answer": "Human motivation"
+    },
+    {
+      "id": 32,
+      "question": "What is the 'Planck constant' fundamentally related to?",
+      "options": ["The speed of light", "The gravitational constant", "The size of atoms", "The quantization of energy"],
+      "answer": "The quantization of energy"
+    },
+    {
+      "id": 33,
+      "question": "In finance, what does 'efficient market hypothesis' (EMH) state?",
+      "options": ["Markets are perfectly predictable", "It's impossible to consistently outperform the market average", "Government regulation improves market efficiency", "Only insider trading is profitable"],
+      "answer": "It's impossible to consistently outperform the market average"
+    },
+    {
+      "id": 34,
+      "question": "What is 'Foucault's pendulum' used to demonstrate?",
+      "options": ["The speed of light", "The rotation of the Earth", "The force of gravity", "The laws of thermodynamics"],
+      "answer": "The rotation of the Earth"
+    },
+    {
+      "id": 35,
+      "question": "In linguistics, what is a 'phoneme'?",
+      "options": ["The smallest unit of meaning in language", "The smallest unit of sound in language that distinguishes one word from another", "A sentence structure", "A word's etymology"],
+      "answer": "The smallest unit of sound in language that distinguishes one word from another"
+    },
+    {
+      "id": 36,
+      "question": "Which ethical theory is most closely associated with the 'categorical imperative'?",
+      "options": ["Utilitarianism", "Virtue ethics", "Deontology", "Consequentialism"],
+      "answer": "Deontology"
+    },
+    {
+      "id": 37,
+      "question": "What is the 'Principle of Least Action' in physics?",
+      "options": ["Nature always takes the quickest path", "Nature always seeks the state of lowest energy", "Nature's paths are always reversible", "Of all possible paths between two points, nature takes the path which is stationary with respect to the action"],
+      "answer": "Of all possible paths between two points, nature takes the path which is stationary with respect to the action"
+    },
+    {
+      "id": 38,
+      "question": "In computer science, what is 'NP-completeness'?",
+      "options": ["A class of problems for which no efficient algorithm is known", "A type of computer virus", "A programming language paradigm", "A data encryption method"],
+      "answer": "A class of problems for which no efficient algorithm is known"
+    },
+    {
+      "id": 39,
+      "question": "What is the 'Gini coefficient' used to measure?",
+      "options": ["Economic growth", "Inflation rate", "Income inequality", "Unemployment rate"],
+      "answer": "Income inequality"
+    },
+    {
+      "id": 40,
+      "question": "Which Renaissance figure is known for the 'Vitruvian Man' drawing?",
+      "options": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Donatello"],
+      "answer": "Leonardo da Vinci"
+    },
+    {
+      "id": 41,
+      "question": "What is 'theodicy' in theology?",
+      "options": ["The study of angels", "The defense of God's goodness and omnipotence in the face of evil", "The doctrine of the Trinity", "The concept of reincarnation"],
+      "answer": "The defense of God's goodness and omnipotence in the face of evil"
+    },
+    {
+      "id": 42,
+      "question": "What does the 'Central Limit Theorem' state in statistics?",
+      "options": ["The mean of a sample is always equal to the population mean", "The distribution of sample means approximates a normal distribution as sample size increases", "Large samples are always biased", "Statistical significance is impossible to achieve with small samples"],
+      "answer": "The distribution of sample means approximates a normal distribution as sample size increases"
+    },
+    {
+      "id": 43,
+      "question": "In genetics, what is 'epigenetics' the study of?",
+      "options": ["DNA mutations", "Changes in gene expression that do not involve alterations to the underlying DNA sequence", "Genetic engineering", "The origin of life"],
+      "answer": "Changes in gene expression that do not involve alterations to the underlying DNA sequence"
+    },
+    {
+      "id": 44,
+      "question": "Which philosophical concept is associated with the 'veil of ignorance'?",
+      "options": ["Utilitarianism", "Libertarianism", "Social contract theory (Rawlsian)", "Communitarianism"],
+      "answer": "Social contract theory (Rawlsian)"
+    },
+    {
+      "id": 45,
+      "question": "What is 'Bayes' Theorem' fundamentally used for?",
+      "options": ["Solving differential equations", "Calculating compound interest", "Updating probabilities based on new evidence", "Predicting stock market crashes"],
+      "answer": "Updating probabilities based on new evidence"
+    },
+    {
+      "id": 46,
+      "question": "What is 'constructivism' in international relations theory?",
+      "options": ["The belief that states are the primary actors", "The idea that international politics is solely driven by material interests", "The view that international relations are shaped by social norms, identities, and ideas", "The advocacy for a world government"],
+      "answer": "The view that international relations are shaped by social norms, identities, and ideas"
+    },
+    {
+      "id": 47,
+      "question": "In art history, what is 'sfumato'?",
+      "options": ["A type of sculpture", "A painting technique characterized by subtle transitions between colors, creating a soft, hazy effect", "A style of architecture", "A genre of still life painting"],
+      "answer": "A painting technique characterized by subtle transitions between colors, creating a soft, hazy effect"
+    },
+    {
+      "id": 48,
+      "question": "What does 'Murphy's Law' popularly state?",
+      "options": ["Anything that can go wrong, will go wrong", "The simplest solution is usually the best", "Time is relative", "What goes around, comes around"],
+      "answer": "Anything that can go wrong, will go wrong"
+    },
+    {
+      "id": 49,
+      "question": "Which concept in evolutionary biology describes the altruistic behavior that benefits the survival of relatives?",
+      "options": ["Natural selection", "Kin selection", "Group selection", "Sexual selection"],
+      "answer": "Kin selection"
+    },
+    {
+      "id": 50,
+      "question": "What is 'Thermodynamic Equilibrium'?",
+      "options": ["A state of constant temperature", "A state where no macroscopic flow of energy or matter occurs within a system or between systems", "The point of maximum entropy in the universe", "A perfectly isolated system"],
+      "answer": "A state where no macroscopic flow of energy or matter occurs within a system or between systems"
+    }
+  ]
+}
