@@ -65,12 +65,12 @@ const QuestionCard = ({
 
   return (
     <section className="flex flex-col items-center w-full max-w-xs p-4 mx-auto text-white transition-all duration-500 ease-in-out bg-gray-800 rounded-lg shadow-2xl sm:max-w-md md:max-w-2xl sm:p-6 font-virgil">
-      <div className="flex flex-row items-center justify-between w-full">
+      <div className="flex flex-row items-center justify-between w-full gap-2">
         <button
-          className="self-start px-4 py-2 text-white transition-all duration-300 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 active:scale-95"
+          className="self-start px-2 py-2 text-white transition-all duration-300 bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 active:scale-95"
           onClick={back}
         >
-          ⬅️ Main Menu
+          ⬅️Main Menu
         </button>
         <Score score={score} />
       </div>
