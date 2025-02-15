@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Knowledge Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive quiz app to test your knowledge across various topics! Challenge yourself, track your scores, and improve your trivia skills.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multiple-choice questions on various topics.
+- Score tracking to monitor your progress.
+- Interactive user interface with responsive design.
+- Randomized questions for a fresh experience every time.
 
-## Expanding the ESLint configuration
+## 🔧 Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend:** HTML, CSS, JavaScript
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Setup Instructions
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/Ernesto248/knowledge-quiz.git
+    ```
+2. Navigate into the project directory:
+    ```bash
+    cd knowledge-quiz
+    ```
+3. Open the `index.html` file in your browser to start the quiz!
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🧑‍💻 How to Contribute
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Fork this repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Make your changes and commit them.
+4. Push to your forked repo:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. Open a pull request to the main repository.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📄 License
+
+This project is open-source and available under the MIT License.
