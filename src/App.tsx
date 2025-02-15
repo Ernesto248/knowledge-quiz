@@ -4,6 +4,7 @@ import useQuiz from "./customHooks/useQuiz";
 import { DifficultyType, QuestionAmountType } from "./types/types.d";
 import QuestionCard from "./components/QuestionCard";
 import ResultModal from "./components/ResutlModal";
+import GitHubFooter from "./components/GitHubFooter";
 
 function App() {
   const [difficulty, setDifficulty] = useState<DifficultyType>(
@@ -98,6 +99,8 @@ function App() {
           totalQuestions={questionAmount}
         />
       )}
+
+      <GitHubFooter repoUrl="https://github.com/Ernesto248/knowledge-quiz/" />
     </main>
   );
 }
